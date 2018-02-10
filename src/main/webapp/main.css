@@ -1,0 +1,145 @@
+
+body{
+  background-image: url(ut1.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -10;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+/*Text Animation*/
+#main{
+	text-align: center;
+
+	margin: 0 auto;
+
+}
+h1, h2, h3{
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	//color: #FFF;
+	color: #F5F5DC;
+	text-shadow: 2px 2px 2px #333;
+}
+
+.animatedText {
+	animation: fadeAndScale .3s cubic-bezier(0, 1.07,.72,1.42);
+	transform-origin: center;
+}
+
+@keyframes fadeAndScale {
+	from{
+		opacity: 0;
+		transform: scale3d(.75, .75, 1);
+	}
+	to{
+		opacity: 1;
+		transform: scale3d(1,1,1);
+	}
+}
+
+input:hover{
+	color: #DC7633;
+}
+
+.shift{
+	text-align: center;
+}
+
+
+
+
+/* Side Nav Bar Animations */
+nav {
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		bottom: 0;
+		width: 200px;
+
+    background: rgba(0,0,0,0.2);
+
+		transform: translate3d(-207px, 0, 0);
+		transition: transform 0.4s ease;
+}
+.active-nav nav {
+		transform: translate3d(-8px, 0, 0);
+}
+
+
+.nav-toggle-btn {
+
+		position: absolute;
+		left: 205px;
+		top: 0px;
+
+}
+
+.lister{
+	color: black; 
+}
+
+
+
+.nav-toggle-btn span{
+  display: block;
+  
+  width: 25px;
+  height: 5px;
+  //background: #151719;
+    background: rgba(0,0,0,0.7);
+  margin: 5px 0px;
+
+}
+
+
+ul li{
+
+  list-style:none;
+  padding:15px 10px;
+  border-bottom:1px solid rgba(100,100,100,0.3);
+  
+  font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+
+
+input[type=text] {
+    width: 130px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    //padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 25%;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

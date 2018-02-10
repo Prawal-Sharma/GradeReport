@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <title>Exam Results</title>
+  </head>
+
+  <body>
+
+    <div id = "hero">
+      <div id = "hero-overlay">
+
+      </div>
+    </div>
+
+
+
+    <!-- Nav Bar-->
+    <nav>
+
+        <!-- <a href="#" class="nav-toggle-btn"></a> -->
+
+        <div class="nav-toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul>
+
+            <li><a class = "lister" style=  "text-decoration: none" target = "_blank" href="http://canvas.utexas.edu/">Canvas 1.0</a></li>
+            <li><a class = "lister" style = "text-decoration: none" target = "_blank" href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+	<div id = "main">
+		<h1 class = "animatedText">
+			Canvas 2.0
+		</h1>
+	</div>
+
+
+
+
+    <br><br><br><br>
+
+    	<div id = "main">
+    		<h2 class = "animatedText">
+    			Would you like your grade report?
+    		</h2>
+    	</div>
+
+    <br><br><br><br>
+    <div id = "main">
+      <h2 class = "animatedText">
+        Enter your student ID number:
+      </h2>
+    </div>
+   <br>
+   <center>
+	<form name="examresultsform" action="examresults" method="post">
+
+        <!--<td colspan="2" style="font-weight:bold;">ID Number:</td> -->
+        <input type = "text" placeholder = "ID Number.." name="idnumber">
+        <input type="submit" value="Submit" >
+   	</form>
+    </center>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script>
+
+      (function() {
+
+          var bodyEl = $('body'),
+              navToggleBtn = bodyEl.find('.nav-toggle-btn');
+
+          navToggleBtn.on('click', function(e) {
+              bodyEl.toggleClass('active-nav');
+              e.preventDefault();
+          });
+
+
+
+      })();
+
+
+
+      $(function() {
+
+                 setTimeout(function() {
+                     $('.fly-in-text').removeClass('hidden');
+                 }, 500);
+
+             })();
+      </script>
+
+  </body>
+</html>
