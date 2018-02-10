@@ -12,7 +12,7 @@ Test student ID: ps27933
 
 
 Features: 
-One you access the database, you can filter the grades by clicking on either the Assignment header - in order to sort Alphabetically, 
+Once you access the database, you can filter the grades by clicking on either the Assignment header - in order to sort Alphabetically, 
 or the Grade header in order to sort Numerically. The search bar also allows you to specify the type of data you would like. The
 search bar accepts all types and variations of requests and finds the closest match. 
 
